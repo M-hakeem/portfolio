@@ -27414,7 +27414,7 @@ document.addEventListener("DOMContentLoaded", () => {
                   },
                 },
               },
-              labels: ["85%"],
+              labels: ["98%"],
               grid: {
                 padding: {
                   top: -16,
@@ -27496,7 +27496,7 @@ document.addEventListener("DOMContentLoaded", () => {
                   },
                 },
               },
-              labels: ["85%"],
+              labels: ["95%"],
               grid: {
                 padding: {
                   top: -16,
@@ -27578,7 +27578,7 @@ document.addEventListener("DOMContentLoaded", () => {
                   },
                 },
               },
-              labels: ["80%"],
+              labels: ["91%"],
               grid: {
                 padding: {
                   top: -16,
