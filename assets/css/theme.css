@@ -1,0 +1,38 @@
+:root {
+  /* Primary palette (light sky blue) */
+  --primary-rgb: 56, 189, 248;
+  --primary: rgb(var(--primary-rgb));
+  --primary-hex: #38bdf8;
+  --primary-hover-hex: #7dd3fc;
+
+  /* Neutrals */
+  --page-bg: #071426;
+  --card-bg: rgba(255, 255, 255, 0.05);
+  --muted: #64748B;
+  --text-dark: #e2e8f0;
+
+  /* Utility */
+  --glass: rgba(56, 189, 248, 0.04);
+}
+
+/* Small helpers to use in HTML quickly */
+.btn-primary {
+  background: linear-gradient(135deg, #0ea5e9, #38bdf8);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  box-shadow: 0 4px 20px rgba(56, 189, 248, 0.28);
+}
+.text-primary { color: var(--primary-hex); }
+.bg-primary { background: linear-gradient(135deg, #0ea5e9, #38bdf8); color: white; }
+
+/* Accessibility: focus outlines */
+:focus {
+  outline: 2px solid rgba(56, 189, 248, 0.32);
+  outline-offset: 2px;
+}
+
+/* Simple CSS variable fallbacks for older rules */
+.theme-page-bg { background-color: var(--page-bg) !important; }
+.theme-card-bg { background-color: var(--card-bg) !important; }
