@@ -231,7 +231,29 @@
       }
       .how-i-work .process-list a.process {
         color: inherit;
+        cursor: pointer;
         text-decoration: none;
+        transition: color 200ms ease;
+      }
+      .how-i-work .process-list a.process:hover,
+      .how-i-work .process-list a.process:focus-visible {
+        color: #00bbf9;
+      }
+      .how-i-work .process-list a.process .circle::before,
+      .how-i-work .process-list a.process .circle-even::before,
+      .how-i-work .process-list a.process .circle::after,
+      .how-i-work .process-list a.process .circle-even::after {
+        transition: border-color 200ms ease;
+      }
+      .how-i-work .process-list a.process:hover .circle::before,
+      .how-i-work .process-list a.process:hover .circle-even::before,
+      .how-i-work .process-list a.process:hover .circle::after,
+      .how-i-work .process-list a.process:hover .circle-even::after,
+      .how-i-work .process-list a.process:focus-visible .circle::before,
+      .how-i-work .process-list a.process:focus-visible .circle-even::before,
+      .how-i-work .process-list a.process:focus-visible .circle::after,
+      .how-i-work .process-list a.process:focus-visible .circle-even::after {
+        border-color: #00bbf9;
       }
       .how-i-work .process-list a.process:focus-visible {
         outline: 2px solid currentColor;
@@ -1102,7 +1124,7 @@
                   <p>Corporate</p>
                   <p>Westlake IPDC</p>
                 </div>
-              </div>
+              </a>
             </div>
             <div
               class="more-info d-flex flex-wrap align-items-center gap-5 gap-md-3"
